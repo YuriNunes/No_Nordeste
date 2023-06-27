@@ -1,0 +1,61 @@
+.txt__titulo{
+    font-family: var(--fonte);
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.banner__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.banner__label{
+    font-family: var(--fonte);
+    margin-bottom: 1rem;
+}
+
+.box{
+    border: 1px solid var(--cor-de-fonte);
+    border-radius: 24px;
+    width: 50%;
+}
+
+.box::placeholder{
+    font-family: var(--fonte);
+    text-align: center;
+}
+
+.box__lager{
+    height: 200px;
+    width: 75%;
+}
+
+.box__lager::placeholder{
+    font-family: var(--fonte);
+    text-align:center;
+}
+
+.button{
+    font-family: var(--fonte);
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (min-width: 800px){
+    .banner__label{
+        text-align: center;
+    }
+
+    .box{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1253px){
+    .box__lager{
+        width: 50%;
+    }
+}

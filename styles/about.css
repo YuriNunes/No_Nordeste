@@ -1,0 +1,32 @@
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+.banner__about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.banner__txt{
+    font-family: var(--fonte);
+    color: var(--cor-de-fonte);
+}
+
+.banner__img{
+    display: none;
+}
+
+@media screen and (min-width: 810px){
+    .banner__img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .banner__img{
+        display: block;
+    }
+}

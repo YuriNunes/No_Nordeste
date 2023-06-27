@@ -1,0 +1,103 @@
+@import url(./styles/about.css);
+@import url(./styles/contact.css);
+
+:root{
+    --cor-de-fundo: orange;
+    --cor-de-fonte: #000000;
+    --fonte:'Gloria Hallelujah', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho{
+    display: flex;
+    gap: 15px;
+    padding: 30px; 
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+
+.cabecalho_menu{
+    font-family: var(--fonte);
+    color: var(--cor-de-fonte);
+    font-size: 0.9rem;
+    padding-bottom: 0;
+    text-decoration: none;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__img__cel{
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.banner__img__tab{
+    display: none;
+}
+
+.banner__img__not{
+    display: none;
+}
+
+.rodape{
+    text-align: center;
+    font-family: var(--fonte);
+    color: var(--cor-de-fonte);
+}
+
+@media screen and (min-width: 800px){
+    .cabecalho{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin: 50px;
+    }
+
+    .cabecalho_menu{
+        font-size: 1.5rem;
+    }
+
+    .banner__img__cel{
+        display: none;
+    }
+    
+    .banner__img__tab{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    
+    .banner__img__not{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .banner__img__cel{
+        display: none;
+    }
+    
+    .banner__img__tab{
+        display: none;
+    }
+    
+    .banner__img__not{
+        display: block;
+        margin-bottom: 70px;
+    }
+}
